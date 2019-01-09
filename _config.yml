@@ -1,0 +1,7 @@
+name: HCMR
+title: Harvard College Mathematics Review
+
+collections:
+  pages:
+    output: true
+    permalink: /:name

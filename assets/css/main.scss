@@ -1,0 +1,150 @@
+---
+# this is here so Jekyll reads the file correctly
+---
+
+$black: #212121;
+$crimson: #c70000;
+$crimson-gradient-dark: #8b3a31;
+$crimson-gradient-light: #e00f06;
+$white: #ffffff;
+$gray: #888888;
+$light-gray: #dddddd;
+$dark-gray: #555555;
+$pinkish: #b996b7;
+$background-color: #f9f8fa;
+
+$font-stack: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+body {
+  background: $background-color;
+  font-family: $font-stack;
+  margin: 0;
+  min-width: 960px;
+}
+
+$header-height: 96px;
+
+header {
+  background: linear-gradient($crimson-gradient-dark, $crimson-gradient-light);
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  padding-left: 64px;
+  padding-right: 64px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 64px;
+      margin: 16px;
+    }
+
+    h1 {
+      display: inline-block;
+      font-weight: 600;
+      text-shadow: $pinkish 0px 1px 3px
+    }
+  }
+
+  nav {
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin-left: 8px;
+      margin-right: 8px;
+
+      a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  padding-left: 64px;
+  padding-right: 64px;
+
+  .sidebar {
+    color: $dark-gray;
+    width: 200px;
+    display: inline-block;
+    float: left;
+    margin: 16px;
+
+    .about {
+      text-align: center;
+
+      img {
+        width: 64px;
+      }
+
+      h2 {
+        font-weight: 400;
+        margin: 0;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .contact {
+    .contact-center {
+      text-align: center;
+    }
+
+    .contact-info {
+      span {
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+
+        &.title {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .content {
+    background: white;
+    padding: 24px;
+    box-shadow: 0px 2px 8px 2px $light-gray;
+  }
+
+  .content-sidebar {
+    background: white;
+    display: inline-block;
+    float: left;
+    padding: 24px;
+    width: calc(100% - 528px);
+    box-shadow: 0px 2px 8px 2px $light-gray;
+  }
+
+  footer {
+    hr {
+      border: 0;
+      height: 0;
+      border-top: 1px solid $light-gray;
+    }
+
+    .legal {
+      color: $gray;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 16px;
+      text-align: center;
+    }
+  }
+}
