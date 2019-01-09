@@ -1,2 +1,5 @@
-# HCMR
-Harvard College Mathematics Review website
+This is the Github page for the Harvard College Mathematics Review (HCMR) website. It is largely based off of the old HCMR website, which used to be found at [thehcmr.org](https://web.archive.org/web/*/thehcmr.org).
+
+It is written with the [Jekyll](https://jekyllrb.com/tutorials/home/) framework for ease of use, and hosted on Github pages. Templates for the webpages are included in `_includes` and `_layouts`. Assets such as images or Sass files are in `assets/`. If you want to edit the text on a page, you can directly edit content in the respective file in the `_pages` folder. The main exceptions to this are `index.md` which contains the content for the homepage, and `contact_sidebar.html` and `issues_sidebar.html`, which have text directly written into the HTML file.
+
+If you would like to commit a change, please [use Jekyll locally](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/) to check your changes, and then [make a pull request](https://help.github.com/articles/creating-a-pull-request/), or talk to whoever is handling website stuff and have them do it.
